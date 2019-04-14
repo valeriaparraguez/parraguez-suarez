@@ -36,7 +36,7 @@ var trabajos = [
     figure: "media/CP6.jpg",
     title: "Blake",
     about: "Ilustración digital del diseño de personaje para historia ilustrada digitalmente.",
-}
+},
 ]
 // LUEGO CREAMOS PARTES DEL SITIO CON CADA DATO CONTENIDO EN LA VARIABLE
 $.each(trabajos, function(i, val) {
