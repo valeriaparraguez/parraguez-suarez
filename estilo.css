@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Dokdo|Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Dokdo');
+@import url('https://fonts.googleapis.com/css?family=Fascinate+Inline|Roboto+Condensed:700');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+*{
+	margin:0;
+	padding:0;
+}
+
+/* ALGUNAS DEFINICIONES GENÉRICAS */
+
+body{
+	font-family: 'Space Mono', monospace;
+	background-image: url('media/fondo 3.jpg');
+    color: #88138E;
+}
+
+h1, h2, h3, h4{
+	font-weight:400;
+}
+
+
+
+h1{
+	font-size:6rem;
+	font-family: 'Space Mono', sans-serif;
+	letter-spacing:0.1em;
+	color: #5EA9BC;
+	text-align:center;
+	text-shadow: 3px 3px 2px #ffffff;
+
+
+
+}
+
+h2{
+	font-size:1.5rem;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing:0.1em;
+	color:white;
+	text-align:center;
+}
+
+h3{
+	font-size:3.0rem;
+	letter-spacing:0.1em;
+	color:#5EA9BC;
+	text-align:center;
+	padding:3rem 0;
+}
+
+h4{
+	font-size:3.0rem;
+	letter-spacing:0.1em;
+	color:#5EA9BC;
+	text-align:center;
+	padding:3rem 0;
+}
+
+a{
+	color: #2B0F64;
+	text-decoration: none;
+}
+
+a:hover{
+	color: blue;
+	text-decoration: none;
+}
+
+/* COMENZAMOS CON LAS PARTES */
+
+#contenido{width:98%; margin:5%;}
+
+
+header{
+	width:98%;
+	top:45%;
+	position: absolute;
+	text-align:center;
+	z-index:9;
+	color: #FF9F96;
+}
+
+video{
+	width:100%;
+	height:auto;
+	filter: grayscale(0);
+
+
+}
+
+#somos{
+	width:100%;
+	background color: #213E68;;
+	margin-bottom:2%;
+	}
+
+.dupla{
+	width:46%;
+	padding:2%;
+	float:left;
+	background-color: #FF9F96;
+	}
+
+.primera{
+	//esta es de las fotos de la cara izquierda
+	min-height:300px;
+	text-align:left;
+	background-color:#98928D;
+	background-image:url('media/Foto vale 3.jpg');
+	background-position:top right;
+	background-repeat:no-repeat;
+	background-size:auto 100%;
+}
+.primera h4{padding: 2% 15% 1% 2%;  font-size: 1.3em; text-align: left}
+
+.primera h5{padding: 1% 40% 2% 2%; margin-bottom:0.5em; letter-spacing:0.1em; text-align: left}
+
+.primera p{padding: 0% 40% 0% 0%;}
+
+.primera address{padding: 2% 40% 2% 2%; font-size:0.9em; font-family: 'Space Mono', sans-serif;}
+
+.segunda{
+	//esta es la foto de la cara derecha
+	min-height:300px;
+	text-align:right;
+	background-color:#98928D;
+	background-image:url('media/Foto ceci 3.jpg');
+	background-position:top left;
+	background-repeat:no-repeat;
+	background-size:auto 100%;
+}
+
+.segunda h4{padding: 2% 2% 1% 30%; text-align: right; font-size: 1.3em;}
+
+.segunda h5{padding: 1% 2% 2% 40%; margin-bottom:0.5em; letter-spacing:0.1em;}
+
+.segunda p{padding: 0% 40% 0% 0%;}
+
+.segunda address{padding: 2% 0% 2% 40%; font-size:0.9em; font-family: 'Space Mono', sans-serif;}
+
+#somos hr{
+	clear:both;
+	border:none;
+	}
+
+#portafolio{
+
+	width:100%;
+	padding-bottom:1%;
+	background:#FFDAB5
+
+	//este es el de la gradiente el rectangulo de los minicuadrados
+}
+
+.item {
+	width:23%;
+	margin:1%;
+	color:#333;
+	background:#9ACDDE;
+	box-shadow:0 0 10px rgba(83,74,145,5);
+}
+
+.item:hover{
+	cursor: pointer;
+}
+
+.item figure{
+	overflow: hidden;
+}
+
+.item figure img{
+	width:100%;
+	height:auto;
+	margin-bottom:-10px;
+	filter: drop-shadow(2);
+}
+
+.item:hover figure img{
+	transform:scale(3);
+	filter: blur(0);
+	transition:all ease-out 3s;
+}
+
+.item h4{
+	font-size:3em;
+	letter-spacing:0.025em;
+	margin:5% 5% 5% 5%;
+}
+
+.item p{
+	font-size:0.875em;
+	letter-spacing:0.05em;
+	margin:2% 5% 6% 5%;
+	color: #5EA9BC;
+}
+
+footer{
+	width:100%;
+	padding:3em 0 1em 0;
+	text-align:center;
+	color: #5EA9BC;
+}
+
+footer p{
+	text-transform:uppercase;
+	letter-spacing:0.1em;
+	font-size:0.9em;
+	}
+
+/* AJUSTES PARA QUE SE VEA BIEN EN DISTINTOS DISPOSITIVOS */
+
+@media screen and (orientation: portrait){
+
+	.dupla{
+		width:96%;
+		padding:2%;
+		float:left;
+	}
+
+}
+
+@media screen and (max-width: 992px){
+
+	header{top:24%;}
+
+
+}
+
+@media screen and (max-width: 768px){
+
+	header{top:12%;}
+
+	.item{
+		width:48%;
+		margin:10%;
+		background:#000;
+		color:#FFF;
+	}
+
+}
+
+@media screen and (max-width: 576px){
+
+	header{top:20%;}
+
+	.item{
+		width:96%;
+		margin:2%;
+		background:#000;
+		color:#FFF;
+	}
+
+}
